@@ -1,5 +1,7 @@
 body {
     background-color: #F0EFEC;
+    font-family: Verdana;
+    font-size: 15px;
 }
 .card {
     background-color: white;
@@ -34,4 +36,9 @@ img {
     padding: 10px;
     border-radius: 100%;
     background-color: white;
+}
+.instructions {
+    border-color: white;
+    border-width: 4px;
+    padding: 20px;
 }
