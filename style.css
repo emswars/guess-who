@@ -26,3 +26,8 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+.mystery {
+    padding: 10px;
+    border-radius: 100%;
+    background-color: white;
+}
