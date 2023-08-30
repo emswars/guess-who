@@ -59,3 +59,6 @@ img {
 h2 {
     text-align: center;
 }
+.eliminated{
+    opacity: 0.2;
+}
