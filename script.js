@@ -91,11 +91,17 @@ function selectRandomCard(element) {
     let randomImg = randomCard.image
     let img = document.querySelector('.mystery')
     img.src = randomImg
-    console.log(img.src)
     document.querySelector('.mystery-name').innerHTML = randomCard.name
-
 }
 selectRandomCard()
 
-
-
+function populateCards() {
+    let cardsSelect = document.querySelector('.cards')
+    for (let i = 0; i < cardArray.length; i++){
+        cardsSelect.innerHTML += '<div class="card" onclick=' + `toggleEliminated(this)` + '>' +
+        '<img src=' + cardArray[i].image + '>' +
+        '<span>' + cardArray[i].name + '</span>' +
+        '</div>'
+    }
+}
+populateCards()
